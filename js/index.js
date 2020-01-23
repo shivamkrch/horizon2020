@@ -25,9 +25,17 @@ window.onload = ev => {
   }
 
   $("#accordion a").on("click", e => {
-    $("i.fas.fa-chevron-down").removeClass("rotate-180");
-    $(e.target)
-      .find("i")
-      .addClass("rotate-180");
+    console.log(e);
+
+    if (!e.target.children[0].classList.contains("rotate-180")) {
+      $("i.fas.fa-chevron-down").removeClass("rotate-180");
+      $(e.target)
+        .find("i")
+        .addClass("rotate-180");
+    } else {
+      $(e.target)
+        .find("i")
+        .removeClass("rotate-180");
+    }
   });
 };

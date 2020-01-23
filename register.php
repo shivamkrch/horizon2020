@@ -25,6 +25,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/styles.css" />
+    <style>
+    .custom-checkbox {
+      font-size: 1.1rem;
+      padding-bottom: .3rem;
+    }
+    </style>
     <title>Registration | Horizon 2k20</title>
     <style>
       .header-bar .site-branding a {
@@ -33,6 +39,12 @@
       }
       .site-navigation ul li a {
         color: #050505;
+      }
+      .site-navigation ul {
+        background: #f8f9fa;
+      }
+      .hamburger-menu span {
+        background: #050505;
       }
     </style>
   </head>
@@ -140,7 +152,7 @@
                         aria-controls="collapseOne"
                       >
                         Central Events
-                        <i class="fas fa-chevron-down float-right"></i>
+                        <i class="fas fa-chevron-down float-right rotate-180"></i>
                       </a>
                     </h5>
                   </div>
@@ -192,11 +204,11 @@
                         <input
                           type="checkbox"
                           class="custom-control-input"
-                          id="event3"
+                          id="event19"
                           name="events[]"
                           value="TechMela"
                         />
-                        <label class="custom-control-label" for="event3"
+                        <label class="custom-control-label" for="event19"
                           >TechMela</label
                         >
                       </div>
@@ -326,7 +338,7 @@
                           type="checkbox"
                           class="custom-control-input"
                           id="event12"
-                          name="eventsA[]"
+                          name="events[]"
                           value="AutoCAD"
                         />
                         <label class="custom-control-label" for="event12"
@@ -338,7 +350,7 @@
                           type="checkbox"
                           class="custom-control-input"
                           id="event13"
-                          name="eventsA[]"
+                          name="events[]"
                           value="Mech Quiz"
                         />
                         <label class="custom-control-label" for="event13"
@@ -350,7 +362,7 @@
                           type="checkbox"
                           class="custom-control-input"
                           id="event14"
-                          name="eventsA[]"
+                          name="events[]"
                           value="Brug-IT"
                         />
                         <label class="custom-control-label" for="event14"
@@ -387,7 +399,7 @@
                           type="checkbox"
                           class="custom-control-input"
                           id="event15"
-                          name="eventsB[]"
+                          name="events[]"
                           value="Circuitrix"
                         />
                         <label class="custom-control-label" for="event15"
@@ -399,7 +411,7 @@
                           type="checkbox"
                           class="custom-control-input"
                           id="event16"
-                          name="eventsB[]"
+                          name="events[]"
                           value="Tech Quiz"
                         />
                         <label class="custom-control-label" for="event16"
@@ -436,7 +448,7 @@
                           type="checkbox"
                           class="custom-control-input"
                           id="event17"
-                          name="eventsC[]"
+                          name="events[]"
                           value="Andromeda"
                         />
                         <label class="custom-control-label" for="event17"
@@ -448,7 +460,7 @@
                           type="checkbox"
                           class="custom-control-input"
                           id="event18"
-                          name="eventsC[]"
+                          name="events[]"
                           value="Web-D"
                         />
                         <label class="custom-control-label" for="event18"
@@ -479,6 +491,7 @@
     <div class="bg-info fixed-countdown" id="fixed-countdown">
       <?php require './countdown.html'; ?>
     </div>
+      <?php require './footer.html'; ?>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

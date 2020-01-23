@@ -34,6 +34,12 @@
       .site-navigation ul li a {
         color: #050505;
       }
+      .site-navigation ul {
+        background: #f8f9fa;
+      }
+      .hamburger-menu span {
+        background: #050505;
+      }
     </style>
   </head>
   <body class="bg-light">
@@ -66,24 +72,9 @@
             $eventsB;
             $eventsC;
             if(isset($p['events'])){
-                $events = implode(' | ', $p['events']);
+                $events = implode(', ', $p['events']);
             }else{
                 $events = '';
-            }
-            if(isset($p['eventsA'])){
-                $eventsA = implode(' | ', $p['eventsA']);
-            }else{
-                $eventsA = '';
-            }
-            if(isset($p['eventsB'])){
-                $eventsB = implode(' | ', $p['eventsB']);
-            }else{
-                $eventsB = '';
-            }
-            if(isset($p['eventsC'])){
-                $eventsC = implode(' | ', $p['eventsC']);
-            }else{
-                $eventsC = '';
             }
             $res = $conn->query("SELECT name FROM participants WHERE email='$email' OR mobile='$mobile'");
             if(isset(mysqli_fetch_assoc($res)['name'])){ ?>
@@ -97,15 +88,34 @@
             }else{
                 $uid = random_int(100000, 999999);
                 $uid = 'HZ20'.$uid;
-                $query = 'INSERT INTO participants (name, email, mobile, college, dept, roll, year, tsize, events, eventsA, eventsB, eventsC, horizon_id) '.
-                 "VALUES('$name', '$email', $mobile, '$clg', '$dept', $roll, '$year', '$tsize', '$events', '$eventsA', '$eventsB', '$eventsC','$uid')";
+                $query = 'INSERT INTO participants (name, email, mobile, college, dept, roll, year, tsize, events, horizon_id) '.
+                 "VALUES('$name', '$email', $mobile, '$clg', '$dept', $roll, '$year', '$tsize', '$events', '$uid')";
                 $res = mysqli_query($conn, $query);
-                if($res){ ?>
+                if($res){ 
+                  $msg = '<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+                        <div style="font-size: 1.2rem; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"">
+                        <p>Hi <b>'.$name.'</b>,</p>
+                        <p>Greetings from Team Horizon!</p>
+                        <p>You have been successfully registerd at BCREC Horizon 2020.</p>
+                        <p>Your Horizon ID is <b style="font-size: 1.5rem; margin-left: .5rem;color: #17a2b8">'.$uid.'</b>.</p>
+                        <p>Use the Horizon ID to pay registration fee and for future references.</p>
+                        <br>
+                        <p>Team Horizon,</p>
+                        <p>BCREC, Durgapur</p>
+                        <p>Follow us on facebook for further updates.</p>
+                    </div>';
+                    $headers = "MIME-Version: 1.0" . "\r\n";
+                    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                    $mailed= FALSE;
+                  if(mail($email, 'Registration successfull at BCREC Horizon 2020', wordwrap($msg,70), $headers)){
+                    $mailed = TRUE;
+                  }
+                  ?>
                     <div class="container-fluid text-justified mb-4 mt-5" style="font-size: 1rem">
                         <p>Hi <b><?=$name ?></b>,</p>
                         <p>You have been successfully registerd at BCREC HORIZON.</p>
-                        <p>Your Horizon ID is <b class="ml-2" style="font-size: 1.5rem"><?=$uid?></b>.</p>
-                        <p>You will recieve an email regarding the registration.</p>
+                        <p>Your Horizon ID is <b class="ml-2 text-info" style="font-size: 1.5rem"><?=$uid?></b>.</p>
+                        <p>You will recieve an email regarding the registration on the email <b><?=$email?></b>.</p>
                         <p>Use the Horizon ID to pay registration fee and for future references.</p>
                     </div>
                     <p class="text-center mt-5">
@@ -115,7 +125,7 @@
 
                 }else{ ?>
                     <div class="mx-3 alert alert-danger text-center mb-4 mt-5" role="alert">
-                        <strong>Unable to register.</strong> Please try again.
+                        <strong>Oops! Something went wrong while registering.</strong> Please try again.
                     </div>
                     <p class="text-center mt-5">
                         <a href="/register.php" class="btn btn-outline-info mx-auto px-5">Register</a>

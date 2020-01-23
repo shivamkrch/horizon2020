@@ -212,8 +212,8 @@ body {
 # hero
 -----------------------------------------------------------*/
 .hero-content {
-  padding: 130px 0;
-  background: url("/images/cover.jpg") no-repeat;
+  padding: 150px 0;
+  background: url("/images/giphy.gif") no-repeat;
   background-size: cover;
 }
 
@@ -229,7 +229,7 @@ body {
   font-family: mountains;
   text-align: center;
   font-size: 15vw;
-  background: -webkit-linear-gradient(#0066ff, #25ffbf);
+  background: -webkit-linear-gradient(#00aeff, #25ffbf);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -384,7 +384,10 @@ a:hover .school-name {
 #accordion a {
   display: block;
   text-decoration: none !important;
-  transition: all 0.5s;
+}
+
+i.fas.fa-chevron-down {
+  transition: all 0.4s;
 }
 
 .rotate-180 {
