@@ -1,0 +1,392 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: hsl(0, 0%, 90%);
+}
+
+@font-face {
+  font-family: "mountains";
+  src: url(/fonts/beyond_the_mountains.ttf);
+  src: url(/fonts/beyond_the_mountains.otf);
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+}
+
+.site-header {
+  position: relative;
+  width: 100%;
+}
+
+.site-header figure {
+  margin: 0;
+  padding: 0;
+}
+
+.site-header figure img {
+  max-width: 100%;
+}
+
+/*------------------------------------------------------------
+## header-bar
+------------------------------------------------------------*/
+.site-header .header-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 25px 0;
+}
+
+.header-bar .site-branding {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.header-bar .site-branding a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.header-bar .site-branding a:hover {
+  color: hsl(202, 96%, 52%);
+  text-decoration: none;
+}
+
+/*------------------------------------------------------------
+### site-navigation
+------------------------------------------------------------*/
+/*
+  Hamburger Menu
+----------------------------------------*/
+.hamburger-menu {
+  position: relative;
+  width: 100%;
+  max-width: 24px;
+  height: 22px;
+  margin-left: auto;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  opacity: 1;
+  left: 0;
+  transition: 0.25s ease-in-out;
+}
+
+.hamburger-menu span:nth-child(1) {
+  top: 2px;
+}
+
+.hamburger-menu span:nth-child(2),
+.hamburger-menu span:nth-child(3) {
+  top: 10px;
+}
+
+.hamburger-menu span:nth-child(4) {
+  top: 18px;
+}
+
+.hamburger-menu.open span:nth-child(1) {
+  top: 18px;
+  width: 0;
+  left: 50%;
+}
+
+.hamburger-menu.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.hamburger-menu.open span:nth-child(4) {
+  top: 18px;
+  width: 0;
+  left: 50%;
+}
+
+.site-navigation {
+  position: absolute;
+  top: -11px;
+  right: 15px;
+  z-index: 9999;
+  width: 100%;
+  height: 22px;
+  overflow: hidden;
+  list-style: none;
+  transition: all 0.35s;
+  color: hsl(0, 0%, 100%);
+}
+
+.site-navigation.show {
+  height: auto;
+}
+
+.site-navigation ul {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  z-index: 9999;
+  width: 320px;
+  height: 100vh;
+  overflow-x: scroll;
+  padding: 30px;
+  margin: 0;
+  background: #050505;
+  transition: all 0.35s;
+}
+
+.site-navigation.show ul {
+  left: 0;
+}
+
+.site-navigation ul li {
+  display: block;
+  padding: 15px 0;
+  letter-spacing: 0.8px;
+}
+
+.site-navigation ul li a {
+  display: block;
+  color: #fff;
+  transition: all 0.35s;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .header-bar .site-branding {
+    margin-left: 35px;
+  }
+
+  .site-navigation {
+    position: relative;
+    top: auto;
+    right: auto;
+    height: auto;
+    padding-right: 35px;
+    background: transparent;
+  }
+
+  .site-navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: auto;
+    background: transparent;
+  }
+
+  .site-navigation ul li {
+    padding: 0;
+  }
+
+  .site-navigation ul li a {
+    color: rgb(238, 237, 237);
+  }
+}
+
+/*------------------------------------------------------------
+# hero
+-----------------------------------------------------------*/
+.hero-content {
+  padding: 130px 0;
+  background: url("/images/cover.jpg") no-repeat;
+  background-size: cover;
+}
+
+.hero-content .entry-header {
+  position: relative;
+  text-align: center;
+}
+
+.hero-content .entry-header h2 {
+  padding: 20px;
+  padding-bottom: 70px;
+  margin: 0;
+  font-family: mountains;
+  text-align: center;
+  font-size: 15vw;
+  background: -webkit-linear-gradient(#0066ff, #25ffbf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content .entry-header .entry-meta-date {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: hsl(0, 0%, 90%);
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .hero-content .entry-header h2 {
+    font-size: 150px;
+  }
+
+  .hero-content .entry-header .entry-meta-date {
+    top: 60px;
+  }
+}
+
+/*------------------------------------------------------------
+## countdown
+------------------------------------------------------------*/
+.countdown {
+  margin-top: 40px;
+}
+
+.countdown-holder {
+  min-width: 150px;
+  margin-bottom: 30px;
+}
+
+.countdown-holder .dday,
+.countdown-holder .dhour,
+.countdown-holder .dmin,
+.countdown-holder .dsec {
+  display: block;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1;
+  color: hsl(0, 0%, 100%);
+}
+
+.countdown-holder label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+.fixed-countdown {
+  position: fixed;
+  padding: 0.5rem 1.2rem;
+  min-height: 9vh;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  transition: all 0.5s;
+  transform: translateX(100vw);
+}
+
+.fixed-countdown .countdown {
+  margin-top: 0px;
+}
+
+.fixed-countdown .countdown-holder {
+  min-width: 70px;
+  margin-bottom: 0px;
+}
+
+.fixed-countdown .countdown-holder .dday,
+.fixed-countdown .countdown-holder .dhour,
+.fixed-countdown .countdown-holder .dmin,
+.fixed-countdown .countdown-holder .dsec {
+  display: block;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+  color: hsl(0, 0%, 100%);
+}
+
+.fixed-countdown .countdown-holder label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+.fixed-countdown.show {
+  transform: translateX(0);
+}
+
+/*------------------------------------------------------------
+## hero-content entry-footer
+------------------------------------------------------------*/
+.hero-content .entry-footer {
+  text-align: center;
+}
+
+.hero-content .entry-footer .btn {
+  background: hsl(0, 0%, 100%);
+  padding: 16px 40px;
+  border-radius: 0;
+  margin-top: 50px;
+  margin-right: 20px;
+  color: hsl(0, 0%, 17%);
+  font-weight: 600;
+}
+
+.hero-content .entry-footer a:hover,
+.hero-content .entry-footer .current {
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+  color: hsl(0, 0%, 0%);
+}
+
+.footer-title {
+  font-family: "mountains";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(#0066ff, #25ffbf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.school-name {
+  color: #050505;
+  text-decoration: none;
+}
+
+a:hover .school-name {
+  text-decoration: none !important;
+}
+
+.reg-btn {
+  padding-left: 1rem !important;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 670px) {
+  .page-heading {
+    font-size: 13vw;
+  }
+}
+
+#accordion a {
+  display: block;
+  text-decoration: none !important;
+  transition: all 0.5s;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
