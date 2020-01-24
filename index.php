@@ -18,9 +18,9 @@
             <div class="row">
                 <div class="col-12 mx-auto col-lg-10">
                     <div class="entry-header">
-                        <h3 class="text-warning" style="font-size: 2rem">Dr. B. C. Roy Engineering College, Durgapur</h3>
+                        <h3 class="clgname text-warning" style="font-size: 2rem">Dr. B. C. Roy Engineering College, Durgapur</h3>
                         <h6>presents</h6>
-                        <h2 style="letter-spacing: .5rem;">HORIZON</h2>
+                        <img src="/images/horizon_logo_white.png" alt="horizon logo" style="max-width: 650px;width: 100%" class="img-fluid py-3">
                     </div><!-- .entry-header -->
                     <div class="entry-header">
                         <h3 id="date" class="text-info" data-date="2020/02/14">14-15 February, 2020</h3>
@@ -32,8 +32,8 @@
             <div class="row">
                 <div class="col-12 ">
                     <div class="entry-footer">
-                        <a href="#" class="btn register-link">Register</a>
-                        <a href="#" class="btn current">See Events</a>
+                        <a href="/register.php" class="btn register-link">Register</a>
+                        <a href="/events.php" class="btn current">See Events</a>
                     </div>
                 </div>
             </div>

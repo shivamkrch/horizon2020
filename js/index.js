@@ -1,4 +1,8 @@
 window.onload = ev => {
+  if (location.pathname != "/" && location.pathname != "/culturalfest.php") {
+    $("#horizon-logo").attr("src", "/images/horizon_logo_black.png");
+  }
+
   $(".hamburger-menu").on("click", function() {
     $(this).toggleClass("open");
     $(".site-navigation").toggleClass("show");

@@ -47,6 +47,10 @@
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4) !important;
         transform: scale(1.02);
       }
+      .card-body h4{
+        text-align: center;
+        font-size: 1.2rem;
+      }
     </style>
   </head>
   <body class="bg-light" style="color: #050505;">
@@ -56,144 +60,111 @@
       <div class="container-fluid my-4 pt-3" id="central">
         <h2>Central Events</h2>
         <div class="row mt-3 justify-content-center">
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
-            <img class="card-img-top" src="/images/giphy.gif" alt="event" />
-            <div class="card-body">
-              <h4 class="card-title text-info">TREASURE HUNT</h4>
-              <p class="card-text text-justify">
-                Do you find riddles intriguing? Is there a sherlock hidden in
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="Treasure Hunt" data-content="Do you find riddles intriguing? Is there a Sherlock hidden in
                 you that jumps out whenever someone asks a riddle? Then it is
                 your time to shine. Horizon 2020, brings the ultimate treasure
                 hunt for you. But mind you, this journey won’t be easy. Well, if
-                the treasure, so strive you have to, for achieving it.
-              </p>
-            </div>
-          </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
+                the treasure, so strive you have to, for achieving it.">
             <img class="card-img-top" src="/images/giphy.gif" alt="event" />
             <div class="card-body">
-              <h4 class="card-title text-info">TECH MELA</h4>
-              <p class="card-text text-justify">
-                Our event “Tech Mela” is providing an opportunity to the
+              <h4 class="card-title text-info mb-3">TREASURE HUNT</h4>
+            </div>
+          </div>
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4"  data-toggle="popover" data-trigger="hover click" data-placement="auto" data-title="Tech Mela" data-content="Our event “Tech Mela” is providing an opportunity to the
                 BCRECians to portray your technical and creative skills.
                 Students will be asked to present their models that are
                 effective as well as user friendly. So, be ready to be your
                 creative armoured with the best technology to win prizes in this
-                intellectually satisfying event of ours.
-              </p>
-            </div>
-          </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
+                intellectually satisfying event of ours.">
             <img class="card-img-top" src="/images/giphy.gif" alt="event" />
             <div class="card-body">
-              <h4 class="card-title text-info">IGNITIA</h4>
-              <p class="card-text text-justify">
-                Horizon 2020 is back with exciting and challenging quiz
+              <h4 class="card-title text-info">TECH MELA</h4>
+            </div>
+          </div>
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover click" data-placement="auto" data-title="Ignitia" data-content="Horizon 2020 is back with exciting and challenging quiz
                 competition that will test your general knowledge where you not
                 only have to answer our “lit” questions but also have to be
                 faster than your rivals. This competition will be a treat for
                 you if current affairs thrill you. So, come and show us your
-                nerdy side.
-              </p>
+                nerdy side.">
+            <img class="card-img-top" src="/images/giphy.gif" alt="event" />
+            <div class="card-body">
+              <h4 class="card-title text-info">IGNITIA</h4>
             </div>
           </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover click" data-placement="auto" data-title="Robotrix" data-content="Robotics has always been a fascination for all of us and with
+                the advent of AI, this fascination has reached the next level.
+                So here, Horizon presents you an amazing competition “Robotrix”
+                to showcase your talent.">
             <img class="card-img-top" src="/images/giphy.gif" alt="event" />
             <div class="card-body">
               <h4 class="card-title text-info">ROBOTRIX</h4>
-              <p class="card-text text-justify">
-                Robotics has always been a fascination for all of us and with
-                the advent of AI, this fascination has reached the next level.
-                So here, Horizon presents you an amazing competition “Robotrix”
-                to showcase your talent.
-              </p>
             </div>
           </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover click" data-placement="auto" data-title="Game Thrones" data-content="Horizon 2020, brings you most exciting and popular games like
+                PUBG, Counter strike and many more. Get ready to give your
+                hundred percent as the one with the highest score gets to win
+                exciting cash prizes.">
             <img class="card-img-top" src="/images/giphy.gif" alt="event" />
             <div class="card-body">
               <h4 class="card-title text-info">GAME THRONES</h4>
-              <p class="card-text text-justify">
-                Horizon 2020, brings you most exciting and popular games like
-                PUBG, Counter strike and many more. Get ready to give your
-                hundred percent as the one with the highest score gets to win
-                exciting cash prizes.
-              </p>
             </div>
           </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
-            <img class="card-img-top" src="/images/giphy.gif" alt="event" />
-            <div class="card-body">
-              <h4 class="card-title text-info">CINEKSHETRA</h4>
-              <p class="card-text text-justify">
-                There is nothing more pleasing than many beautiful, appealing
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="Cinekshetra" data-content="There is nothing more pleasing than many beautiful, appealing
                 shots compiled together with perfectly timed and planned
                 transitions. So, BCRECians pick up your cameras and tripods and
                 assemble your cast and crew for the annual filmmaking
-                competition called “Cinekshetra”.
-              </p>
-            </div>
-          </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
+                competition called “Cinekshetra”.">
             <img class="card-img-top" src="/images/giphy.gif" alt="event" />
             <div class="card-body">
-              <h4 class="card-title text-info">BOHEMIAN COLOURS</h4>
-              <p class="card-text text-justify">
-                “Bohemian colours” is a terrific platform to go crazy with
+              <h4 class="card-title text-info">CINEKSHETRA</h4>
+            </div>
+          </div>
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="Bohemian Colours" data-content="“Bohemian colours” is a terrific platform to go crazy with
                 colours and show off your artsy self. Horizon 2020 gives you a
                 splendid chance to showcase your talent in t shirt painting.
                 Come join us to have a creatively fulfilling time and get a
-                chance to win exciting prizes.
-              </p>
-            </div>
-          </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
+                chance to win exciting prizes.">
             <img class="card-img-top" src="/images/giphy.gif" alt="event" />
             <div class="card-body">
-              <h4 class="card-title text-info">XPOSED</h4>
-              <p class="card-text text-justify">
-                Photographs speak louder than word. The most beautiful thing
+              <h4 class="card-title text-info">BOHEMIAN COLOURS</h4>
+            </div>
+          </div>
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="Xposed" data-html="true" data-content="Photographs speak louder than word. The most beautiful thing
                 about a photograph is the story that hides behind it. It is like
                 a poem waiting to be written, and the poem is different for
                 every different set of eyes. <br />
                 Photography enthusiasts alert, here’s a perfect chance to prove
-                your talent behind the lens.
-              </p>
+                your talent behind the lens.">
+            <img class="card-img-top" src="/images/giphy.gif" alt="event" />
+            <div class="card-body">
+              <h4 class="card-title text-info">XPOSED</h4>
             </div>
           </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="WannaCode" data-content="Test your programming skills against top coders in this contest
+                of knowledge and speed. Compete with your knowledge of C, C++
+                and other programming languages and grab exciting cash prizes.">
             <img class="card-img-top" src="/images/giphy.gif" alt="event" />
             <div class="card-body">
               <h4 class="card-title text-info">WANNACODE</h4>
-              <p class="card-text text-justify">
-                Test your programming skills against top coders in this contest
-                of knowledge and speed. Compete with your knowledge of C, C++
-                and other programming languages and grab exciting cash prizes.
-              </p>
             </div>
           </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="B-Plan" data-content="And yet again, we are back with our exciting b plan competition.
+                If you want to transform your ideas into reality, we have
+                perfect platform for you. Just show us your business acumen and
+                pitch your novel ideas and get to win exciting cash prizes.">
             <img class="card-img-top" src="/images/giphy.gif" alt="event" />
             <div class="card-body">
               <h4 class="card-title text-info">B-PLAN</h4>
-              <p class="card-text text-justify">
-                And yet again, we are back with our exciting b plan competition.
-                If you want to transform your ideas into reality, we have
-                perfect platform for you. Just show us your business acumen and
-                pitch your novel ideas and get to win exciting cash prizes.
-              </p>
             </div>
           </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="Scholar" data-content="Continuing our tradition of nurturing the love of science
+                amongst the citizens of tomorrow, Horizon is back with
+                “Scholar”, for the students where they can present their
+                innovative ideas.">
             <img class="card-img-top" src="/images/giphy.gif" alt="event" />
             <div class="card-body">
               <h4 class="card-title text-info">SCHOLAR</h4>
-              <p class="card-text text-justify">
-                Continuing our tradition of nurturing the love of science
-                amongst the citizens of tomorrow, Horizon is back with
-                “Scholar”, for the students where they can present their
-                innovative ideas.
-              </p>
             </div>
           </div>
         </div>
@@ -201,40 +172,31 @@
       <div class="container-fluid mt-4 pt-3" id="schoolA">
         <h2>School A</h2>
         <div class="row mt-3 justify-content-center">
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="AutoCAD" data-content="Being creative as well as technologically skilled is 
+          a bliss. Show us your command over the software AutoCAD with the creative
+                minds. AutoCAD is a designing competition where you can show
+                your designing skills and win cash prizes.">
             <img class="card-img-top" src="/images/giphy.gif" alt="event" />
             <div class="card-body">
-              <h4 class="card-title text-info">AUTO CAD</h4>
-              <p class="card-text text-justify">
-                Being creative as well as technologically skilled is a bliss.
-                Show us your command over the software AutoCAD with the creative
-                minds. AutoCAD is a designing competition where you can show
-                your designing skills and win cash prizes.
-              </p>
+              <h4 class="card-title text-info">AUTOCAD</h4>
             </div>
           </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
-            <img class="card-img-top" src="/images/giphy.gif" alt="event" />
-            <div class="card-body">
-              <h4 class="card-title text-info">MECH QUIZ</h4>
-              <p class="card-text text-justify">
-                Does machines and their working excite you? Is the much popular
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="Mech Quiz" data-content="Does machines and their working excite you? Is the much popular
                 Bollywood movie “3 idiots” your favourite and your sheer love
                 for machines makes you wanna watch it again and again? Horizon
                 2020, brings you the ultimate quiz challenge to churn your
                 “machinophilic” intelllects. Be there if you know all the trivia
-                about mechanics.
-              </p>
+                about mechanics.">
+            <img class="card-img-top" src="/images/giphy.gif" alt="event" />
+            <div class="card-body">
+              <h4 class="card-title text-info">MECH QUIZ</h4>
             </div>
           </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="Brug-It" data-content="Let your construction be load resistant. Come build your model
+                that will face the disaster. A civil engineer at a stake.">
             <img class="card-img-top" src="/images/giphy.gif" alt="event" />
             <div class="card-body">
               <h4 class="card-title text-info">BRUG-IT</h4>
-              <p class="card-text text-justify">
-                Let your construction be load resistant. Come build your model
-                that will face the disaster. A civil engineer at a stake.
-              </p>
             </div>
           </div>
         </div>
@@ -242,30 +204,24 @@
       <div class="container-fluid my-4 pt-3" id="schoolB">
         <h2>School B</h2>
         <div class="row mt-3 justify-content-center">
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
-            <img class="card-img-top" src="/images/giphy.gif" alt="event" />
-            <div class="card-body">
-              <h4 class="card-title text-info">CIRCUITRIX</h4>
-              <p class="card-text text-justify">
-                Do you think you have a knack for circuits? If you do, then get
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="Circuitrix" data-content="Do you think you have a knack for circuits? If you do, then get
                 ready for an enthralling experience by participating in our
                 exclusive event called “Circuitrix”. Answer the questions thrown
                 at you, and then present a solution to a problem by making a
-                circuit.
-              </p>
-            </div>
-          </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
+                circuit.">
             <img class="card-img-top" src="/images/giphy.gif" alt="event" />
             <div class="card-body">
-              <h4 class="card-title text-info">TECH QUIZ</h4>
-              <p class="card-text text-justify">
-                Tech quiz is a sensational event for all the tech enthusiasts.
+              <h4 class="card-title text-info">CIRCUITRIX</h4>
+            </div>
+          </div>
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="Tech Quiz" data-content="Tech quiz is a sensational event for all the tech enthusiasts.
                 It is a perfect platform to satiate your minds with a
                 challenging yet fun quiz. We ,at Horizon 2020, is ecstatic to
                 invite you to participate in our annual tech quiz and you get an
-                amazing chance to win awesome prizes.
-              </p>
+                amazing chance to win awesome prizes.">
+            <img class="card-img-top" src="/images/giphy.gif" alt="event" />
+            <div class="card-body">
+              <h4 class="card-title text-info">TECH QUIZ</h4>
             </div>
           </div>
         </div>
@@ -273,32 +229,32 @@
       <div class="container-fluid my-4 pt-3" id="schoolC">
         <h2>School C</h2>
         <div class="row mt-3 justify-content-center">
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
-            <img class="card-img-top" src="/images/giphy.gif" alt="event" />
-            <div class="card-body">
-              <h4 class="card-title text-info">ANDROMEDA</h4>
-              <p class="card-text text-justify">
-                Are you ready to showcase your talent as a skilled app
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="Andromeda" data-content="Are you ready to showcase your talent as a skilled app
                 developer? Then here is a golden opportunity for you. Come and
                 participate in our super cool android application developing
                 competition, where you get to compete with various participants
                 and get a chance to win exciting prizes with your programming
-                skills.
+                skills.">
+            <img class="card-img-top" src="/images/giphy.gif" alt="event" />
+            <div class="card-body">
+              <h4 class="card-title text-info">ANDROMEDA</h4>
+              <p class="card-text text-justify">
+                
               </p>
             </div>
           </div>
-          <div class="card text-left col-11 m-3 col-md-5 px-0 shadow mx-4">
-            <img class="card-img-top" src="/images/giphy.gif" alt="event" />
-            <div class="card-body">
-              <h4 class="card-title text-info">WEB-D</h4>
-              <p class="card-text text-justify">
-                In today’s age we can get every information on web. From
+          <div class="card text-left col-11 m-3 col-md-3 px-0 shadow mx-4" data-toggle="popover" data-trigger="hover" data-placement="auto" data-title="Web-D" data-content="In today’s age we can get every information on web. From
                 academic knowledge to hotel recommendations, we go to web for
                 everything. Therefore, website development is a very important
                 topic in technological sphere. If you think you are a skilled
                 web developer, we at Horizon 2020, give you a chance to showcase
                 your skills. Come and join us and get a chance to win awesome
-                prizes.
+                prizes.">
+            <img class="card-img-top" src="/images/giphy.gif" alt="event" />
+            <div class="card-body">
+              <h4 class="card-title text-info">WEB-D</h4>
+              <p class="card-text text-justify">
+                
               </p>
             </div>
           </div>
@@ -326,5 +282,8 @@
     ></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/index.js"></script>
+    <script>
+      $('[data-toggle="popover"]').popover();
+    </script>
   </body>
 </html>

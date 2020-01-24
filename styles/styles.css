@@ -264,7 +264,7 @@ body {
 }
 
 .countdown-holder {
-  min-width: 150px;
+  min-width: 130px;
   margin-bottom: 30px;
 }
 
@@ -433,6 +433,31 @@ i.fas.fa-chevron-down {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .clgname {
+    font-size: 4vw !important;
+  }
+
+  #date {
+    font-size: 6vw !important;
+  }
+
+  .countdown-holder {
+    min-width: 20vw;
+  }
+
+  .countdown-holder label {
+    font-size: 0.9rem;
+  }
+
+  .countdown-holder .dday,
+  .countdown-holder .dhour,
+  .countdown-holder .dmin,
+  .countdown-holder .dsec {
+    font-size: 40px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .person {
     padding-top: 16.666%;
@@ -451,5 +476,9 @@ i.fas.fa-chevron-down {
   }
   .footer-title {
     font-size: 15vw;
+  }
+
+  #clgname {
+    font-size: 5vw !important;
   }
 }

@@ -53,7 +53,7 @@
         <div class="row">
           <div class="col-12 mx-auto col-lg-10">
             <div class="entry-header">
-              <h3 class="text-warning" style="font-size: 2rem">
+              <h3 class="clgname text-warning" style="font-size: 2rem">
                 Dr. B. C. Roy Engineering College, Durgapur
               </h3>
               <h6>presents</h6>
