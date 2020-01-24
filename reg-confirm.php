@@ -25,7 +25,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Registration Confirmation | Horizon 2k20</title>
+    <title>Registration Confirmation | Horizon 2020</title>
     <style>
       .header-bar .site-branding a {
         color: #050505;

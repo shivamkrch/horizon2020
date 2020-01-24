@@ -4,7 +4,8 @@ window.onload = ev => {
     $(".site-navigation").toggleClass("show");
   });
 
-  var countdown_date = $(".countdown").data("date");
+  var countdown_date = $("#date").data("date") || "2020/02/14";
+
   var now = Date.now();
 
   if (new Date(countdown_date) - now > 0) {
@@ -25,8 +26,6 @@ window.onload = ev => {
   }
 
   $("#accordion a").on("click", e => {
-    console.log(e);
-
     if (!e.target.children[0].classList.contains("rotate-180")) {
       $("i.fas.fa-chevron-down").removeClass("rotate-180");
       $(e.target)

@@ -31,7 +31,7 @@
       padding-bottom: .3rem;
     }
     </style>
-    <title>Registration | Horizon 2k20</title>
+    <title>Registration | Horizon 2020</title>
     <style>
       .header-bar .site-branding a {
         color: #050505;
@@ -206,10 +206,10 @@
                           class="custom-control-input"
                           id="event19"
                           name="events[]"
-                          value="TechMela"
+                          value="Tech Mela"
                         />
                         <label class="custom-control-label" for="event19"
-                          >TechMela</label
+                          >Tech Mela</label
                         >
                       </div>
                       <div class="custom-control custom-checkbox">
@@ -266,13 +266,13 @@
                           class="custom-control-input"
                           id="event8"
                           name="events[]"
-                          value="RoboSoccer"
+                          value="Robotrix"
                         />
                         <label class="custom-control-label" for="event8"
-                          >RoboSoccer</label
+                          >Robotrix</label
                         >
                       </div>
-                      <div class="custom-control custom-checkbox">
+                      <!-- <div class="custom-control custom-checkbox">
                         <input
                           type="checkbox"
                           class="custom-control-input"
@@ -283,7 +283,7 @@
                         <label class="custom-control-label" for="event9"
                           >RoboWar</label
                         >
-                      </div>
+                      </div> -->
                       <div class="custom-control custom-checkbox">
                         <input
                           type="checkbox"
